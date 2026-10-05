@@ -339,6 +339,14 @@ export const eventConfig: EventConfig = {
       isPlaceholder: false,
     },
     {
+      id: "vikrant-yadav",
+      name: "Vikrant Yadav",
+      role: "Organizer",
+      bio: "Organizing event logistics, venue coordination, and technical operations.",
+      image: "/team/vikrant-yadav.jpeg",
+      isPlaceholder: false,
+    },
+    {
       id: "divyansh",
       name: "Divyansh",
       role: "Organizer",
