@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Crosshair, Cpu, Globe, Terminal, Activity, Zap, Play, Box, RefreshCw, Server, Radio, Palette, Film, Layers } from 'lucide-react';
+import { Crosshair, Cpu, Globe, Terminal, Activity, Zap, Play, Box, RefreshCw, Server, Radio, Palette, Film, Layers, Shield } from 'lucide-react';
 
 /* -------------------------------------------------------------
  * 01: GAME DEVELOPMENT VISUAL (Interactive Simulation Workbench)
@@ -431,6 +431,87 @@ export const CreativeSkillsVisual: React.FC = () => {
           </button>
         </div>
         <div className="text-brown font-bold hidden sm:block">EXPORT // PNG · 4K</div>
+      </div>
+    </div>
+  );
+};
+
+/* -------------------------------------------------------------
+ * 05: CYBERSECURITY VISUAL (Interactive Recon & Threat Console)
+ * ------------------------------------------------------------- */
+export const CybersecurityVisual: React.FC = () => {
+  const [mode, setMode] = useState<'RECON' | 'EXPLOIT' | 'DEFEND'>('RECON');
+  const [threatsBlocked, setThreatsBlocked] = useState<number>(42);
+  const [isScanning, setIsScanning] = useState<boolean>(true);
+
+  const blockThreat = () => {
+    setThreatsBlocked((prev) => prev + 1);
+  };
+
+  const alerts = ['PORT SCAN BLOCKED', 'XSS PAYLOAD DROPPED', 'BRUTE-FORCE ATTEMPT', 'SQLI SIGNATURE CAUGHT'];
+
+  return (
+    <div className="relative w-full h-[390px] md:h-[460px] bg-cream border-2 border-ink shadow-card overflow-hidden flex flex-col justify-between p-6 select-none">
+      {/* HUD Header & Mode Pills */}
+      <div className="relative z-10 flex flex-wrap items-center justify-between gap-3 font-mono text-[10px] text-ink-muted border-b-2 border-ink/20 pb-3">
+        <div className="flex items-center gap-2">
+          <span className={`inline-block w-2 h-2 ${isScanning ? 'bg-green animate-pulse' : 'bg-black/30'}`} />
+          <span className="text-ink font-bold">THREAT MONITOR // {mode}</span>
+        </div>
+
+        <div className="flex items-center gap-1.5 bg-black/[0.04] p-1 border-2 border-ink/20">
+          {(['RECON', 'EXPLOIT', 'DEFEND'] as const).map((m) => (
+            <button
+              key={m}
+              type="button"
+              onClick={() => setMode(m)}
+              className={`px-2 py-0.5 rounded text-[9px] font-bold transition-all cursor-pointer ${
+                mode === m ? 'bg-ink text-cream' : 'text-ink-muted hover:text-ink'
+              }`}
+            >
+              {m}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Terminal Alerts Column */}
+      <div className="relative z-10 my-auto py-3 space-y-2">
+        {alerts.map((alert, idx) => (
+          <div
+            key={alert}
+            className={`flex items-center gap-2 border-2 px-2.5 py-1.5 font-mono text-[10px] font-bold ${
+              idx === 0 && isScanning
+                ? 'bg-yellow border-ink text-ink'
+                : 'bg-black/5 border-ink/30 text-ink-muted'
+            }`}
+          >
+            <Terminal className="w-3 h-3 text-reddark" />
+            <span>{alert}</span>
+          </div>
+        ))}
+      </div>
+
+      {/* Bottom Interactive Bar */}
+      <div className="relative z-10 flex flex-wrap items-center justify-between gap-3 font-mono text-[10px] text-ink-muted border-t-2 border-ink/20 pt-3">
+        <button
+          type="button"
+          onClick={blockThreat}
+          className="flex items-center gap-1.5 px-2 py-1 bg-black/5 hover:bg-yellow hover:text-ink border-2 border-ink/30 transition-colors cursor-pointer"
+          title="Block another threat"
+        >
+          <Shield className="w-2.5 h-2.5" />
+          <span>THREATS BLOCKED: {threatsBlocked}</span>
+        </button>
+
+        <button
+          type="button"
+          onClick={() => setIsScanning(!isScanning)}
+          className="flex items-center gap-1.5 px-2.5 py-1 bg-ink text-cream hover:bg-yellow hover:text-ink font-bold text-[9px] transition-colors cursor-pointer"
+        >
+          <Activity className="w-2.5 h-2.5" />
+          <span>{isScanning ? 'SCAN LIVE' : 'SCAN PAUSED'}</span>
+        </button>
       </div>
     </div>
   );

@@ -168,8 +168,8 @@ export const IntroSection: React.FC = () => {
             />
             <DisciplineBadge
               icon={<Palette className="w-4 h-4" />}
-              title="CREATIVE SKILLS"
-              trackNumber="TRACK 04"
+              title="MINI-TRACKS"
+              trackNumber="MORE"
               delay={0.5}
             />
           </div>

@@ -37,8 +37,8 @@ export const PrizesPage: React.FC = () => {
         <SectionHeader
           number="04"
           category="RECOGNITION & REWARDS"
-          title="THE REWARD ARCHITECTURE"
-          subtitle="Honoring exceptional technical depth, uncompromised design execution, and raw ingenuity across all four competition disciplines."
+          title="PRIZES & REWARDS"
+          subtitle="Build something great. Leave with something even better. Every participant takes home certificates and curated hampers, while winners unlock recognition, premium resources, technology rewards, and opportunities."
         />
 
         {/* HOW SCORING WORKS */}

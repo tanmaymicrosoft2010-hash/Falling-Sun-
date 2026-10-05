@@ -60,7 +60,7 @@ export const HomePage: React.FC = () => {
       {/* 05: TEAM FALLING SUN */}
       <HomeTeamSection />
 
-      {/* 04: TRACKS PREVIEW — links to the dedicated /tracks page */}
+      {/* 04: TRACKS PREVIEW — links to the dedicated /rays page */}
       <HomeTracksSection />
 
       {/* 07: FAQ TEASER — links to the dedicated /faq page */}
@@ -103,7 +103,7 @@ export const HomePage: React.FC = () => {
           </h2>
 
           <p className="text-ink-muted text-base md:text-lg max-w-xl mx-auto font-sans leading-relaxed font-medium">
-            {eventConfig.format} across Game Dev, Web Dev, Robotics, and Creative Skills. Reserve your spot before applications reach capacity.
+            {eventConfig.format} across Game Dev, Web Dev, Robotics, and Mini-Tracks. Reserve your spot before applications reach capacity.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4 pt-4">

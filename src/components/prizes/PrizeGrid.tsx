@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { eventConfig } from '../../config/eventConfig';
-import { Trophy, Award, Sparkles } from 'lucide-react';
+import { Trophy, Sparkles } from 'lucide-react';
 import { WhatsAppCTA } from '../common/WhatsAppCTA';
 import { StampCard } from '../StampCard';
 
@@ -75,10 +75,6 @@ export const PrizeGrid: React.FC = () => {
 
             {/* Bottom Card Footer */}
               <div className="pt-8 border-t-2 border-ink/20 flex items-center justify-between font-mono text-[11px] text-ink-muted">
-                <span className="flex items-center gap-1.5 font-semibold text-ink">
-                  <Award className="w-3.5 h-3.5 text-brown group-hover:scale-110 transition-transform" />
-                  <span>OFFICIAL TROPHY</span>
-                </span>
                 <span className="text-ink-muted uppercase font-bold">WHATSAPP DROP</span>
               </div>
             </StampCard>

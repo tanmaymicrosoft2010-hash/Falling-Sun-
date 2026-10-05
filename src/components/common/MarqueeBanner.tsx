@@ -13,7 +13,7 @@ export const MarqueeBanner: React.FC<MarqueeBannerProps> = ({
     'GAME DEVELOPMENT',
     'WEB DEVELOPMENT',
     'ROBOTICS',
-    'CREATIVE SKILLS',
+    'MINI-TRACKS',
     '12H + 12H FORMAT',
     '2 DAYS',
     'BUILD SOMETHING WORTH REMEMBERING',

@@ -72,9 +72,12 @@ export const eventConfig: EventConfig = {
       // CONFIRM WITH ORGANIZER
       subThemes: ["Drones", "Line followers", "Sensors and IoT", "Automation", "etc."],
     },
+  ],
+
+  miniTracks: [
     {
       id: "creative-skills",
-      number: "04",
+      number: "M1",
       title: "CREATIVE SKILLS",
       tagline: "MODEL IT. EDIT IT. DESIGN IT. SHIP IT FINISHED.",
       description:
@@ -87,8 +90,24 @@ export const eventConfig: EventConfig = {
       ],
       tools: ["Blender", "Figma", "DaVinci Resolve", "After Effects", "Illustrator"],
       colorAccent: "#F2327F",
-      // CONFIRM WITH ORGANIZER
       subThemes: ["3D modeling", "Video editing", "Graphic design", "Motion and animation", "etc."],
+    },
+    {
+      id: "many-more",
+      number: "M2",
+      title: "AND MANY MORE",
+      tagline: "MORE MINI-TRACKS DROP BEFORE KICKOFF.",
+      description:
+        "We're curating additional mini-tracks between now and the opening ceremony. Watch the official WhatsApp channel for announcements.",
+      focusAreas: [
+        "Announcements via WhatsApp",
+        "Community voting",
+        "Surprise bounties",
+        "Bonus mini-challenges"
+      ],
+      tools: ["Stay tuned"],
+      colorAccent: "#FDB813",
+      subThemes: ["TBA", "etc."],
     },
   ],
 
@@ -261,6 +280,54 @@ export const eventConfig: EventConfig = {
       description: "A prototype that does the job, with its software integration proven. Schematics, tinkering, and simulation count — your code logic has to hold up, a full working simulation is not required.",
       status: "TBA",
     },
+    {
+      id: "p10",
+      rank: "10",
+      title: "CERTIFICATES FOR EVERYONE",
+      category: "REWARDS & PERKS",
+      description: "Every participant receives an official Falling Sun participation certificate, while winners, mentors and contributors receive specialised certificates recognising their role.",
+      status: "TBA",
+    },
+    {
+      id: "p11",
+      rank: "11",
+      title: "PARTICIPANT HAMPERS",
+      category: "REWARDS & PERKS",
+      description: "Every participant receives a curated Falling Sun hamper: stickers & collectibles, custom 3D-printed goodies, event merchandise, partner goodies, tech accessories & stationery, plus surprise rewards.",
+      status: "TBA",
+    },
+    {
+      id: "p12",
+      rank: "12",
+      title: "PREMIUM DIGITAL REWARDS",
+      category: "REWARDS & PERKS",
+      description: "Unlock a growing collection of vouchers, premium subscriptions, software credits, developer tools, learning resources, and domains from our technology ecosystem.",
+      status: "TBA",
+    },
+    {
+      id: "p13",
+      rank: "13",
+      title: "DEVELOPER CREDITS & TOOLS",
+      category: "REWARDS & PERKS",
+      description: "Selected participants and winners receive cloud credits, API credits, development tools, and premium platforms to keep building after the hackathon.",
+      status: "TBA",
+    },
+    {
+      id: "p14",
+      rank: "14",
+      title: "DOMAINS & PREMIUM SUBSCRIPTIONS",
+      category: "REWARDS & PERKS",
+      description: "Selected builders can receive premium domains, hosting/deployment benefits, and software subscriptions to take their projects further.",
+      status: "TBA",
+    },
+    {
+      id: "p15",
+      rank: "15",
+      title: "SPECIAL TRACK & PARTNER PRIZES",
+      category: "REWARDS & PERKS",
+      description: "Technology partners introduce their own special awards, challenges, and bounties — win based on innovation, technical excellence, creativity, and real-world impact.",
+      status: "TBA",
+    },
   ],
 
   team: [
@@ -276,8 +343,8 @@ export const eventConfig: EventConfig = {
     {
       id: "aniket-gaba",
       name: "Aniket Gaba",
-      role: "Director",
-      bio: "Directing event execution, schedule orchestration, and operational alignment.",
+      role: "Faculty Advisor",
+      bio: "Advising on event execution, schedule orchestration, and operational alignment.",
       image: "/team/aniket-gaba.jpeg",
       isPlaceholder: false,
       section: "backbone",
@@ -370,14 +437,14 @@ export const eventConfig: EventConfig = {
     {
       id: "f0",
       question: "Who can participate?",
-      answer: "Those who are under 18 and all.",
+      answer: "Falling Sun welcomes builders under 18, and participants over 18 are also free to join.",
       category: "Eligibility",
     },
     {
       id: "f1",
       question: "WHAT IS FALLING SUN?",
       answer:
-        "FALLING SUN is a premier hackathon where ambitious young technologists gather for 2 days (12 hours + 12 hours) to build real, working projects in Game Development, Web Development, Robotics, and Creative Skills. It is engineered to give builders high-end creative freedom without corporate templates.",
+        "FALLING SUN is a premier hackathon where ambitious young technologists gather for 2 days (12 hours + 12 hours) to build real, working projects in Game Development, Web Development, and Robotics, with additional mini-tracks such as Creative Skills. It is engineered to give builders high-end creative freedom without corporate templates.",
       category: "General",
     },
     {
@@ -396,9 +463,9 @@ export const eventConfig: EventConfig = {
     },
     {
       id: "f4",
-      question: "WHAT ARE THE FOUR TRACKS?",
+      question: "WHAT ARE THE TRACKS?",
       answer:
-        "The hackathon is centered around four tracks: (1) Game Development — building original playable titles, procedural systems, and game mechanics; (2) Web Development — engineering modern interactive web applications and digital interfaces; (3) Robotics — programming microcontrollers, sensors, and physical computing prototypes; and (4) Creative Skills — 3D modeling, video editing, and graphic design for makers who ship finished pieces.",
+        "The hackathon is centered around three main tracks: (1) Game Development — building original playable titles, procedural systems, and game mechanics; (2) Web Development — engineering modern interactive web applications and digital interfaces; and (3) Robotics — programming microcontrollers, sensors, and physical computing prototypes. Alongside these, we run mini-tracks such as Creative Skills — 3D modeling, video editing, and graphic design for makers who ship finished pieces — with more to be announced.",
       category: "Tracks",
     },
     {

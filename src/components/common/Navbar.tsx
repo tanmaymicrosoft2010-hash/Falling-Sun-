@@ -9,7 +9,7 @@ import { useRegistrationLock } from './RegistrationLockModal';
 
 const navItems = [
   { number: "01", label: "ABOUT", path: "/about" },
-  { number: "02", label: "TRACKS", path: "/tracks" },
+  { number: "02", label: "RAYS", path: "/rays" },
   { number: "03", label: "SCHEDULE", path: "/schedule" },
   { number: "04", label: "PRIZES", path: "/prizes" },
   { number: "05", label: "TEAM", path: "/team" },

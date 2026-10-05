@@ -69,6 +69,7 @@ export interface EventConfig {
   registrationOpensAt: string;
   registrationUrl?: string;
   tracks: TrackItem[];
+  miniTracks: TrackItem[];
   schedule: ScheduleDay[];
   prizes: PrizeItem[];
   team: TeamMember[];
