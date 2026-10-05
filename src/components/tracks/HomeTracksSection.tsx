@@ -18,7 +18,7 @@ export const HomeTracksSection: React.FC = () => {
             transition={{ duration: 0.5 }}
             className="font-mono text-xs uppercase tracking-[0.2em] text-ink font-bold"
           >
-            FOUR COMPETITION ARENAS
+            THREE COMPETITION ARENAS
           </motion.p>
 
           <motion.h2

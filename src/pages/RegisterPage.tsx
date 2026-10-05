@@ -113,7 +113,7 @@ export const RegisterPage: React.FC = () => {
                 </div>
                 <div className="flex items-center gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-reddark shrink-0" />
-                  <span>Choose from Game Dev, Web Dev, Robotics, or Creative Skills tracks</span>
+                  <span>Choose from Game Dev, Web Dev, or Robotics tracks</span>
                 </div>
                 <div className="flex items-center gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-reddark shrink-0" />

@@ -5,6 +5,7 @@ import { Shield, Sparkles, X, Info } from 'lucide-react';
 import { WhatsAppCTA } from '../common/WhatsAppCTA';
 import { TeamMember } from '../../types';
 import { RoleTag } from './RoleTag';
+import { MemberPhoto } from './MemberPhoto';
 
 export const TeamGrid: React.FC = () => {
   const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);
@@ -53,11 +54,11 @@ export const TeamGrid: React.FC = () => {
               className="group relative overflow-hidden bg-cream border-2 border-ink shadow-card hover:shadow-[8px_8px_0_#1d1210] transition-all duration-300 cursor-pointer flex flex-col"
             >
               <div className="relative aspect-[220/280] w-full overflow-hidden bg-ink">
-                <img
-                  src={member.image}
-                  alt={`${member.name} - ${member.role}`}
-                  className="w-full h-full object-cover transform transition-transform duration-500 ease-out group-hover:scale-105"
-                  loading="lazy"
+                <MemberPhoto
+                  image={member.image}
+                  name={member.name}
+                  role={member.role}
+                  imgClassName="w-full h-full object-cover transform transition-transform duration-500 ease-out group-hover:scale-105"
                 />
                 <RoleTag role={member.role} />
                 <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-start justify-end p-3">
@@ -83,7 +84,7 @@ export const TeamGrid: React.FC = () => {
           <div className="flex items-center gap-3">
             <div className="px-3 py-1.5 bg-green border-2 border-ink text-cream font-mono text-xs font-bold uppercase tracking-widest flex items-center gap-2 shadow-[2px_2px_0_#1d1210]">
               <Shield className="w-4 h-4" />
-              <span>ADVISING FACULTY</span>
+              <span>MENTORS & ADVISING FACULTY</span>
             </div>
             <div className="flex-1 h-px bg-ink/25 border-t-2 border-dashed"></div>
             <span className="font-mono text-xs text-ink-muted uppercase tracking-widest font-semibold">FACULTY & ADVISORS</span>
@@ -102,11 +103,11 @@ export const TeamGrid: React.FC = () => {
                 className="group relative overflow-hidden bg-cream border-2 border-ink shadow-card hover:shadow-[8px_8px_0_#1d1210] transition-all duration-300 cursor-pointer flex flex-col"
               >
                 <div className="relative aspect-[220/280] w-full overflow-hidden bg-ink">
-                  <img
-                    src={member.image}
-                    alt={`${member.name} - ${member.role}`}
-                    className="w-full h-full object-cover transform transition-transform duration-500 ease-out group-hover:scale-105"
-                    loading="lazy"
+                  <MemberPhoto
+                    image={member.image}
+                    name={member.name}
+                    role={member.role}
+                    imgClassName="w-full h-full object-cover transform transition-transform duration-500 ease-out group-hover:scale-105"
                   />
                   <RoleTag role={member.role} />
                   <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-start justify-end p-3">
@@ -148,10 +149,11 @@ export const TeamGrid: React.FC = () => {
               <div className="flex items-start justify-between">
                 <div className="flex items-center gap-4">
                   <div className="w-16 h-20 overflow-hidden bg-ink border-2 border-ink shrink-0">
-                    <img
-                      src={selectedMember.image}
-                      alt={selectedMember.name}
-                      className="w-full h-full object-cover"
+                    <MemberPhoto
+                      image={selectedMember.image}
+                      name={selectedMember.name}
+                      role={selectedMember.role}
+                      imgClassName="w-full h-full object-cover"
                     />
                   </div>
                   <div>

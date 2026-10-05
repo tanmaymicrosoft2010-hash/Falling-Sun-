@@ -72,24 +72,6 @@ export const eventConfig: EventConfig = {
       // CONFIRM WITH ORGANIZER
       subThemes: ["Drones", "Line followers", "Sensors and IoT", "Automation", "etc."],
     },
-    {
-      id: "creative-skills",
-      number: "04",
-      title: "CREATIVE SKILLS",
-      tagline: "MODEL IT. EDIT IT. DESIGN IT. SHIP IT FINISHED.",
-      description:
-        "For makers who design more than they code. Show us a finished piece, not a rough sketch.",
-      focusAreas: [
-        "3D Modeling & Texturing",
-        "Video Editing & Post Production",
-        "Graphic Design & Layout",
-        "Motion Graphics & Animation"
-      ],
-      tools: ["Blender", "Figma", "DaVinci Resolve", "After Effects", "Illustrator"],
-      colorAccent: "#F2327F",
-      // CONFIRM WITH ORGANIZER
-      subThemes: ["3D modeling", "Video editing", "Graphic design", "Motion and animation", "etc."],
-    },
   ],
 
   schedule: [
@@ -276,8 +258,8 @@ export const eventConfig: EventConfig = {
     {
       id: "aniket-gaba",
       name: "Aniket Gaba",
-      role: "Director",
-      bio: "Directing event execution, schedule orchestration, and operational alignment.",
+      role: "Mentor",
+      bio: "Mentoring teams on technical architecture, execution flow, and operational alignment.",
       image: "/team/aniket-gaba.jpeg",
       isPlaceholder: false,
       section: "backbone",
@@ -298,6 +280,14 @@ export const eventConfig: EventConfig = {
       bio: "Overseeing participant experience, coordination, and on-ground event support.",
       image: "/team/antesh-chauhan.png",
       isPlaceholder: false,
+      section: "backbone",
+    },
+    {
+      id: "anshika",
+      name: "Anshika",
+      role: "Mentor",
+      bio: "Mentoring participants on project scoping, design thinking, and event-day coordination.",
+      isPlaceholder: true,
       section: "backbone",
     },
     {
@@ -377,7 +367,7 @@ export const eventConfig: EventConfig = {
       id: "f1",
       question: "WHAT IS FALLING SUN?",
       answer:
-        "FALLING SUN is a premier hackathon where ambitious young technologists gather for 2 days (12 hours + 12 hours) to build real, working projects in Game Development, Web Development, Robotics, and Creative Skills. It is engineered to give builders high-end creative freedom without corporate templates.",
+        "FALLING SUN is a premier hackathon where ambitious young technologists gather for 2 days (12 hours + 12 hours) to build real, working projects in Game Development, Web Development, and Robotics. It is engineered to give builders high-end creative freedom without corporate templates.",
       category: "General",
     },
     {
@@ -396,9 +386,9 @@ export const eventConfig: EventConfig = {
     },
     {
       id: "f4",
-      question: "WHAT ARE THE FOUR TRACKS?",
+      question: "WHAT ARE THE THREE TRACKS?",
       answer:
-        "The hackathon is centered around four tracks: (1) Game Development — building original playable titles, procedural systems, and game mechanics; (2) Web Development — engineering modern interactive web applications and digital interfaces; (3) Robotics — programming microcontrollers, sensors, and physical computing prototypes; and (4) Creative Skills — 3D modeling, video editing, and graphic design for makers who ship finished pieces.",
+        "The hackathon is centered around three tracks: (1) Game Development — building original playable titles, procedural systems, and game mechanics; (2) Web Development — engineering modern interactive web applications and digital interfaces; and (3) Robotics — programming microcontrollers, sensors, and physical computing prototypes.",
       category: "Tracks",
     },
     {

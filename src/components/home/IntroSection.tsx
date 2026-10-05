@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { ArrowUpRight, Code, Cpu, Gamepad2, Palette } from 'lucide-react';
+import { ArrowUpRight, Code, Cpu, Gamepad2 } from 'lucide-react';
 import { MaskedReveal, InteractiveRollText } from '../common/AnimatedText';
 import { MagneticButton } from '../common/MagneticButton';
 
@@ -146,7 +146,7 @@ export const IntroSection: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* 4 Discipline Badges on the right with 3D Tilt Scroll entrance & character wave roll */}
+          {/* 3 Discipline Badges on the right with 3D Tilt Scroll entrance & character wave roll */}
           <div className="lg:col-span-5 grid grid-cols-1 gap-3.5 font-mono text-xs">
             <DisciplineBadge
               icon={<Gamepad2 className="w-4 h-4" />}
@@ -165,12 +165,6 @@ export const IntroSection: React.FC = () => {
               title="ROBOTICS"
               trackNumber="TRACK 03"
               delay={0.4}
-            />
-            <DisciplineBadge
-              icon={<Palette className="w-4 h-4" />}
-              title="CREATIVE SKILLS"
-              trackNumber="TRACK 04"
-              delay={0.5}
             />
           </div>
         </div>

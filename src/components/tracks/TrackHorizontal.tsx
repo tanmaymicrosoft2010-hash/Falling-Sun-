@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { eventConfig } from '../../config/eventConfig';
-import { GameDevVisual, WebDevVisual, RoboticsVisual, CreativeSkillsVisual } from './TrackVisuals';
+import { GameDevVisual, WebDevVisual, RoboticsVisual } from './TrackVisuals';
 import { ArrowLeft, ArrowRight, CheckCircle2, ChevronRight, Sparkles } from 'lucide-react';
 import { MagneticButton } from '../common/MagneticButton';
 import { MaskedReveal, InteractiveRollText } from '../common/AnimatedText';
@@ -17,7 +17,6 @@ export const TrackHorizontal: React.FC = () => {
     'game-development': <GameDevVisual key="gamedev" />,
     'web-development': <WebDevVisual key="webdev" />,
     'robotics': <RoboticsVisual key="robotics" />,
-    'creative-skills': <CreativeSkillsVisual key="creative-skills" />,
   };
 
   const nextTrack = () => {

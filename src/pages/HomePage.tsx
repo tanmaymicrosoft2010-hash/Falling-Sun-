@@ -103,7 +103,7 @@ export const HomePage: React.FC = () => {
           </h2>
 
           <p className="text-ink-muted text-base md:text-lg max-w-xl mx-auto font-sans leading-relaxed font-medium">
-            {eventConfig.format} across Game Dev, Web Dev, Robotics, and Creative Skills. Reserve your spot before applications reach capacity.
+            {eventConfig.format} across Game Dev, Web Dev, and Robotics. Reserve your spot before applications reach capacity.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4 pt-4">

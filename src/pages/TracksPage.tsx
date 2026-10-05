@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { SectionHeader } from '../components/common/SectionHeader';
-import { GameDevVisual, WebDevVisual, RoboticsVisual, CreativeSkillsVisual } from '../components/tracks/TrackVisuals';
+import { GameDevVisual, WebDevVisual, RoboticsVisual } from '../components/tracks/TrackVisuals';
 import { eventConfig } from '../config/eventConfig';
 import { WhatsAppCTA } from '../components/common/WhatsAppCTA';
 import { CheckCircle2, ArrowUpRight } from 'lucide-react';
@@ -15,7 +15,6 @@ export const TracksPage: React.FC = () => {
     'game-development': <GameDevVisual key="game" />,
     'web-development': <WebDevVisual key="web" />,
     'robotics': <RoboticsVisual key="robotics" />,
-    'creative-skills': <CreativeSkillsVisual key="creative-skills" />,
   };
 
   return (
@@ -25,7 +24,7 @@ export const TracksPage: React.FC = () => {
         <SectionHeader
           number="02"
           category="COMPETITION ARENAS"
-          title="FOUR PATHWAYS. INFINITE OUTCOMES."
+          title="THREE PATHWAYS. INFINITE OUTCOMES."
           subtitle="Select your focus track. Whether your craft is graphics pipelines, distributed web applications, or kinetic robotics, Falling Sun provides the infrastructure to build without limits."
         />
 

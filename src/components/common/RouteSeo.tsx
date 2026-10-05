@@ -5,7 +5,7 @@ export const SITE_URL = 'https://fallingsun2026.vercel.app';
 const SITE_NAME = 'FALLING SUN 2026';
 
 const DEFAULT_DESCRIPTION =
-  'FALLING SUN is a premier 2-day (12H + 12H) hackathon covering Game Development, Web Development, Robotics, and Creative Skills. Build something worth remembering.';
+  'FALLING SUN is a premier 2-day (12H + 12H) hackathon covering Game Development, Web Development, and Robotics. Build something worth remembering.';
 
 const ROUTE_META: Record<string, { title: string; description: string }> = {
   '/': {
@@ -15,12 +15,12 @@ const ROUTE_META: Record<string, { title: string; description: string }> = {
   '/about': {
     title: 'About | FALLING SUN 2026 — Hackathon 2026',
     description:
-      'Learn about FALLING SUN 2026, a student-run hackathon running a 12H + 12H format across 2 days with tracks in Game Dev, Web Dev, Robotics, and Creative Skills.',
+      'Learn about FALLING SUN 2026, a student-run hackathon running a 12H + 12H format across 2 days with tracks in Game Dev, Web Dev, and Robotics.',
   },
   '/tracks': {
     title: 'Tracks | FALLING SUN 2026 — Game Dev, Web Dev, Robotics',
     description:
-      'Explore the four FALLING SUN 2026 hackathon tracks: Game Development, Web Development, Robotics, and Creative Skills — focus areas, tools, and judging criteria.',
+      'Explore the three FALLING SUN 2026 hackathon tracks: Game Development, Web Development, and Robotics — focus areas, tools, and judging criteria.',
   },
   '/schedule': {
     title: 'Schedule | FALLING SUN 2026 — 12H + 12H Over 2 Days',
@@ -45,7 +45,7 @@ const ROUTE_META: Record<string, { title: string; description: string }> = {
   '/register': {
     title: 'Register | FALLING SUN 2026 — Applications',
     description:
-      'Register for FALLING SUN 2026. Hackers can apply duo or in teams of up to 4 across Game Dev, Web Dev, Robotics, and Creative Skills. 100% free.',
+      'Register for FALLING SUN 2026. Hackers can apply duo or in teams of up to 4 across Game Dev, Web Dev, and Robotics. 100% free.',
   },
 };
 

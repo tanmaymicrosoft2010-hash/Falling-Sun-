@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { ArrowUpRight } from 'lucide-react';
 import { eventConfig } from '../../config/eventConfig';
 import { RoleTag } from './RoleTag';
+import { MemberPhoto } from './MemberPhoto';
 
 export const HomeTeamSection: React.FC = () => {
   const organizers = eventConfig.team.filter((m) => m.section !== 'backbone');
@@ -73,11 +74,11 @@ export const HomeTeamSection: React.FC = () => {
                 className="group relative overflow-hidden bg-cream border-2 border-ink shadow-card hover:shadow-[8px_8px_0_#1d1210] transition-all duration-300"
               >
                 <div className="relative aspect-[220/280] w-full overflow-hidden bg-ink">
-                  <img
-                    src={member.image}
-                    alt={`${member.name} - ${member.role}`}
-                    className="w-full h-full object-cover transform transition-transform duration-500 ease-out group-hover:scale-105"
-                    loading="lazy"
+                  <MemberPhoto
+                    image={member.image}
+                    name={member.name}
+                    role={member.role}
+                    imgClassName="w-full h-full object-cover transform transition-transform duration-500 ease-out group-hover:scale-105"
                   />
 
                   <RoleTag role={member.role} />
@@ -89,12 +90,12 @@ export const HomeTeamSection: React.FC = () => {
           </div>
         </div>
 
-        {/* SECTION 2: ADVISING FACULTY (BOTTOM) */}
+        {/* SECTION 2: MENTORS & ADVISING FACULTY (BOTTOM) */}
         {facultyMembers.length > 0 && (
           <div className="space-y-4 pt-4">
             <div className="flex items-center gap-3">
               <span className="px-3 py-1 bg-green border-2 border-cream text-cream font-mono text-xs font-bold uppercase tracking-widest">
-                ADVISING FACULTY
+                MENTORS & ADVISING FACULTY
               </span>
               <div className="flex-1 h-px bg-cream/20 border-t-2 border-dashed"></div>
             </div>
@@ -111,11 +112,11 @@ export const HomeTeamSection: React.FC = () => {
                   className="group relative overflow-hidden bg-cream border-2 border-ink shadow-card hover:shadow-[8px_8px_0_#1d1210] transition-all duration-300"
                 >
                   <div className="relative aspect-[220/280] w-full overflow-hidden bg-ink">
-                    <img
-                      src={member.image}
-                      alt={`${member.name} - ${member.role}`}
-                      className="w-full h-full object-cover transform transition-transform duration-500 ease-out group-hover:scale-105"
-                      loading="lazy"
+                    <MemberPhoto
+                      image={member.image}
+                      name={member.name}
+                      role={member.role}
+                      imgClassName="w-full h-full object-cover transform transition-transform duration-500 ease-out group-hover:scale-105"
                     />
                     <RoleTag role={member.role} />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-30 transition-opacity duration-300 pointer-events-none" />

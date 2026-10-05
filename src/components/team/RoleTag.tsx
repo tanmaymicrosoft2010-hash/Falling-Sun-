@@ -1,5 +1,5 @@
 import React from 'react';
-import { Crown, Sparkles, Shield, ShieldCheck } from 'lucide-react';
+import { Crown, Sparkles, Shield, ShieldCheck, GraduationCap } from 'lucide-react';
 
 interface RoleTagStyle {
   label: string;
@@ -26,6 +26,12 @@ const getRoleTagStyle = (role: string): RoleTagStyle => {
         label: 'ADVISOR',
         icon: <Shield className="w-2.5 h-2.5 text-current" />,
         className: 'bg-ink text-cream border-cream',
+      };
+    case 'Mentor':
+      return {
+        label: 'MENTOR',
+        icon: <GraduationCap className="w-2.5 h-2.5 text-current" />,
+        className: 'bg-yellow text-ink border-ink',
       };
     case 'Director':
       return {
