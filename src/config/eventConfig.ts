@@ -307,19 +307,19 @@ export const eventConfig: EventConfig = {
       isPlaceholder: false,
     },
     {
-      id: "kartik-patel",
-      name: "Kartik Patel",
-      role: "Lead Organizer",
-      bio: "Lead Organizer steering vision, platform infrastructure, and high-impact hacker experience for Falling Sun.",
-      image: "/team/kartik-patel.jpeg",
-      isPlaceholder: false,
-    },
-    {
       id: "dev-priya",
       name: "Dev Priya",
       role: "Lead Organizer",
       bio: "Lead Organizer heading participant workflows, registration onboarding, and event communications.",
       image: "/team/dev-priya.jpeg",
+      isPlaceholder: false,
+    },
+    {
+      id: "kartik-patel",
+      name: "Kartik Patel",
+      role: "Lead Organizer",
+      bio: "Lead Organizer steering vision, platform infrastructure, and high-impact hacker experience for Falling Sun.",
+      image: "/team/kartik-patel.jpeg",
       isPlaceholder: false,
     },
     {
