@@ -90,12 +90,12 @@ export const HomeTeamSection: React.FC = () => {
           </div>
         </div>
 
-        {/* SECTION 2: MENTORS & ADVISING FACULTY (BOTTOM) */}
+        {/* SECTION 2: EXECUTIVE & MENTORS (BOTTOM) */}
         {facultyMembers.length > 0 && (
           <div className="space-y-4 pt-4">
             <div className="flex items-center gap-3">
               <span className="px-3 py-1 bg-green border-2 border-cream text-cream font-mono text-xs font-bold uppercase tracking-widest">
-                MENTORS & ADVISING FACULTY
+                EXECUTIVE & MENTORS
               </span>
               <div className="flex-1 h-px bg-cream/20 border-t-2 border-dashed"></div>
             </div>

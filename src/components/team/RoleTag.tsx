@@ -33,6 +33,12 @@ const getRoleTagStyle = (role: string): RoleTagStyle => {
         icon: <GraduationCap className="w-2.5 h-2.5 text-current" />,
         className: 'bg-yellow text-ink border-ink',
       };
+    case 'Executive Director':
+      return {
+        label: 'EXEC. DIRECTOR',
+        icon: <Crown className="w-2.5 h-2.5 text-current" />,
+        className: 'bg-yellow text-ink border-ink',
+      };
     case 'Director':
       return {
         label: 'DIRECTOR',

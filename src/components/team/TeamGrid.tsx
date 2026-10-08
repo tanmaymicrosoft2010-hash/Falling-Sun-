@@ -78,16 +78,16 @@ export const TeamGrid: React.FC = () => {
         </div>
       </div>
 
-      {/* SECTION 2: ADVISING FACULTY (BOTTOM) */}
+      {/* SECTION 2: EXECUTIVE & MENTORS (BOTTOM) */}
       {facultyMembers.length > 0 && (
         <div className="space-y-6 pt-4">
           <div className="flex items-center gap-3">
             <div className="px-3 py-1.5 bg-green border-2 border-ink text-cream font-mono text-xs font-bold uppercase tracking-widest flex items-center gap-2 shadow-[2px_2px_0_#1d1210]">
               <Shield className="w-4 h-4" />
-              <span>MENTORS & ADVISING FACULTY</span>
+              <span>EXECUTIVE & MENTORS</span>
             </div>
             <div className="flex-1 h-px bg-ink/25 border-t-2 border-dashed"></div>
-            <span className="font-mono text-xs text-ink-muted uppercase tracking-widest font-semibold">FACULTY & ADVISORS</span>
+            <span className="font-mono text-xs text-ink-muted uppercase tracking-widest font-semibold">LEADERSHIP & MENTORS</span>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 w-full">
