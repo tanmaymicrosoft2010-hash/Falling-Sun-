@@ -249,8 +249,8 @@ export const eventConfig: EventConfig = {
     {
       id: "aniket-gaba",
       name: "Aniket Gaba",
-      role: "Executive Director",
-      bio: "Executive Director directing event execution, schedule orchestration, and operational alignment.",
+      role: "Hackathon Convener",
+      bio: "Hackathon Convener directing overall event strategy, schedule orchestration, and operational execution.",
       image: "/team/aniket-gaba.jpeg",
       isPlaceholder: false,
       section: "backbone",
