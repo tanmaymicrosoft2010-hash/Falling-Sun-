@@ -19,7 +19,7 @@ export const AboutPage: React.FC = () => {
           number="01"
           category="ABOUT THE HACKATHON"
           title="ENGINEERED FOR THE RELENTLESS."
-          subtitle="Falling Sun was created to destroy the myth that young developers should be confined to simple toy projects or drag-and-drop block coding."
+          subtitle="Falling Sun was created to destroy the myth that ambitious developers should be confined to simple toy projects or drag-and-drop block coding."
         />
 
         {/* Big Editorial Quote (Light Theme) */}

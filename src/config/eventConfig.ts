@@ -341,21 +341,21 @@ export const eventConfig: EventConfig = {
     {
       id: "f0",
       question: "Who can participate?",
-      answer: "Those who are under 18 and all.",
+      answer: "FALLING SUN is open to all! Everyone — developers, designers, hardware hackers, and builders of all ages and backgrounds — is welcome to participate.",
       category: "Eligibility",
     },
     {
       id: "f1",
       question: "WHAT IS FALLING SUN?",
       answer:
-        "FALLING SUN is a premier hackathon where ambitious young technologists gather for 2 days (12 hours + 12 hours) to build real, working projects in Game Development, Web Development, and Robotics. It is engineered to give builders high-end creative freedom without corporate templates.",
+        "FALLING SUN is a premier hackathon where ambitious technologists and builders gather for 2 days (12 hours + 12 hours) to build real, working projects in Game Development, Web Development, and Robotics. It is engineered to give builders high-end creative freedom without corporate templates.",
       category: "General",
     },
     {
       id: "f2",
       question: "IS IT OPEN TO ALL SKILL LEVELS?",
       answer:
-        "Yes. Self-taught creators and young builders of all skill levels are welcome.",
+        "Yes. Self-taught creators, experienced developers, and builders of all ages and skill levels are welcome.",
       category: "Eligibility",
     },
     {

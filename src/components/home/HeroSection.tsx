@@ -121,7 +121,7 @@ export const HeroSection: React.FC = () => {
 
             {/* Headline */}
             <h1 className="rough font-display font-black uppercase text-cream leading-[0.92] -rotate-2 text-[clamp(3.6rem,15vw,11rem)] break-word m-0">
-              Young builders
+              Ambitious builders
               <br />
               turn ideas
               <span className="block text-yellow">into reality.</span>

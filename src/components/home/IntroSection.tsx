@@ -6,7 +6,7 @@ import { MagneticButton } from '../common/MagneticButton';
 
 const statementLines = [
   "FALLING SUN",
-  "IS WHERE YOUNG",
+  "IS WHERE CREATORS",
   "BUILDERS TURN",
   "IDEAS INTO REALITY.",
 ];
@@ -130,7 +130,7 @@ export const IntroSection: React.FC = () => {
             className="lg:col-span-7 space-y-6"
           >
             <p className="text-cream text-lg md:text-xl leading-relaxed font-bold">
-              <MaskedReveal text="A two-day hackathon where young builders assemble to engineer, experiment, tackle authentic engineering challenges, and ship working prototypes." />
+              <MaskedReveal text="A two-day hackathon where ambitious builders assemble to engineer, experiment, tackle authentic engineering challenges, and ship working prototypes." />
             </p>
             <p className="text-cream text-sm md:text-base leading-relaxed font-medium">
               No hollow slide decks or vaporware. Whether it’s physics engines in Godot, real-time reactive websockets in React, or autonomous telemetry circuits on ESP32, Falling Sun celebrates the craft of shipping real systems.

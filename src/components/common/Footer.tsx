@@ -89,7 +89,7 @@ export const Footer: React.FC = () => {
                 <span className="text-yellow">WORTH REMEMBERING.</span>
               </div>
               <p className="text-xs text-cream/80 max-w-md pt-2 font-sans font-medium">
-                A two-day hackathon where young builders turn raw imagination into playable games, distributed web applications, and autonomous robotics.
+                A two-day hackathon where ambitious builders turn raw imagination into playable games, distributed web applications, and autonomous robotics.
               </p>
             </div>
 
