@@ -47,6 +47,11 @@ const ROUTE_META: Record<string, { title: string; description: string }> = {
     description:
       'Register for FALLING SUN 2026. Hackers can apply duo or in teams of up to 4 across Game Dev, Web Dev, and Robotics. 100% free.',
   },
+  '/form': {
+    title: 'Team Registration Form | FALLING SUN 2026',
+    description:
+      'Accepted team leaders can sign in with their organiser-provided invite code to register a team of up to 4 for FALLING SUN 2026.',
+  },
 };
 
 function setMeta(attr: 'name' | 'property', key: string, content: string) {

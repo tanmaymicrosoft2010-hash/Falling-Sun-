@@ -20,6 +20,7 @@ import { PrizesPage } from './pages/PrizesPage';
 import { TeamPage } from './pages/TeamPage';
 import { FaqPage } from './pages/FaqPage';
 import { RegisterPage } from './pages/RegisterPage';
+import { FormPage } from './pages/FormPage';
 
 const AnimatedRoutes: React.FC = () => {
   const location = useLocation();
@@ -88,6 +89,14 @@ const AnimatedRoutes: React.FC = () => {
           element={
             <PageTransition>
               <RegisterPage />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/form"
+          element={
+            <PageTransition>
+              <FormPage />
             </PageTransition>
           }
         />
