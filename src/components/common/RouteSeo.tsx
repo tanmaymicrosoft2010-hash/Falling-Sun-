@@ -47,6 +47,11 @@ const ROUTE_META: Record<string, { title: string; description: string }> = {
     description:
       'Register for FALLING SUN 2026. Hackers can apply duo or in teams of up to 4 across Game Dev, Web Dev, and Robotics. 100% free.',
   },
+  '/form': {
+    title: 'Team Registration Form | FALLING SUN 2026',
+    description:
+      'Accepted team leaders can sign in with their organiser-provided invite code to register a team of up to 4 for FALLING SUN 2026.',
+  },
 };
 
 function setMeta(attr: 'name' | 'property', key: string, content: string) {
@@ -63,7 +68,13 @@ export const RouteSeo: React.FC = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    const meta = ROUTE_META[pathname] ?? ROUTE_META['/'];
+    const isProjectPage = /^\/team\/[^/]+$/.test(pathname);
+    const meta = isProjectPage
+      ? {
+          title: 'Project | FALLING SUN 2026',
+          description: 'Explore a team project built for FALLING SUN 2026.',
+        }
+      : ROUTE_META[pathname] ?? ROUTE_META['/'];
     const url = `${SITE_URL}${pathname === '/' ? '/' : pathname}`;
 
     document.title = meta.title;

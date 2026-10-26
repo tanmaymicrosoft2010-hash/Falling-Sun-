@@ -354,6 +354,22 @@ export const eventConfig: EventConfig = {
       isPlaceholder: false,
     },
     {
+      id: "prince-kumar-suryavanshi",
+      name: "Prince Kumar Suryavanshi",
+      role: "Organizer",
+      bio: "Organizing event operations and supporting the Falling Sun team.",
+      image: "/team/prince-kumar-suryavanshi.jpeg",
+      isPlaceholder: false,
+    },
+    {
+      id: "utkarsh-saraswat",
+      name: "Utkarsh Saraswat",
+      role: "Organizer",
+      bio: "Organizing event operations and supporting the Falling Sun team.",
+      image: "/team/utkarsh-saraswat.jpeg",
+      isPlaceholder: false,
+    },
+    {
       id: "naman",
       name: "Naman",
       role: "College Organizer",
@@ -491,4 +507,3 @@ export const eventConfig: EventConfig = {
     },
   ],
 };
-
