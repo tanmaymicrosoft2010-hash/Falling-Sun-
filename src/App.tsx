@@ -22,6 +22,7 @@ import { ProjectPage } from './pages/ProjectPage';
 import { FaqPage } from './pages/FaqPage';
 import { RegisterPage } from './pages/RegisterPage';
 import { FormPage } from './pages/FormPage';
+import { WebSubmissionPage } from './pages/WebSubmissionPage';
 
 const AnimatedRoutes: React.FC = () => {
   const location = useLocation();
@@ -106,6 +107,14 @@ const AnimatedRoutes: React.FC = () => {
           element={
             <PageTransition>
               <FormPage />
+            </PageTransition>
+          }
+        />
+        <Route
+          path="/form/submission/web"
+          element={
+            <PageTransition>
+              <WebSubmissionPage />
             </PageTransition>
           }
         />

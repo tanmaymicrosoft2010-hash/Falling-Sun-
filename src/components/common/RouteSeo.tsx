@@ -52,6 +52,10 @@ const ROUTE_META: Record<string, { title: string; description: string }> = {
     description:
       'Accepted team leaders can sign in with their organiser-provided invite code to register a team of up to 4 for FALLING SUN 2026.',
   },
+  '/form/submission/web': {
+    title: 'Web Project Submission | FALLING SUN 2026',
+    description: 'Submit your Web Development project for FALLING SUN 2026.',
+  },
 };
 
 function setMeta(attr: 'name' | 'property', key: string, content: string) {
