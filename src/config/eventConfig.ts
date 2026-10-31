@@ -405,6 +405,14 @@ export const eventConfig: EventConfig = {
       isPlaceholder: false,
       section: "college",
     },
+    {
+      id: "yashuuu",
+      name: "Yashuuu",
+      role: "Organizer",
+      bio: "Organizing event coordination, participant support, and on-ground operations.",
+      image: "/team/yashuuu.png",
+      isPlaceholder: false,
+    },
   ],
 
   faqs: [
